@@ -1,0 +1,33 @@
+/* Hide the collapsible menu by default on small screens */
+@media (max-width: 991px) {
+    /* Initially hide the menu */
+    .navbar-collapse {
+      display: none;
+    }
+    /* When the checkbox is checked, display the menu */
+    #menu-toggle:checked ~ .navbar-collapse {
+      display: block;
+    }
+    
+    /* Optional: Style adjustments for mobile menu */
+    .navbar-nav {
+      flex-direction: column;
+      background: #fff; /* Adjust background as needed */
+      width: 100%;
+    }
+    .navbar-nav .nav-item {
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    
+    /* Hide the dropdown submenu by default */
+    .navbar-nav .dropdown-menu {
+      display: none;
+    }
+    
+    /* Allow dropdowns to open on hover or via additional CSS hacks if needed */
+    .navbar-nav .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+  }
+  

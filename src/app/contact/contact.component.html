@@ -1,0 +1,113 @@
+<section class="hero-contact">
+    <div class="overlay">
+        <h1>Let’s Plan Your Dream Journey</h1>
+        <p>Explore breathtaking destinations with our expert-guided travel packages. </p>
+        <p>From serene beaches to majestic mountains, we create unforgettable travel experiences
+        tailored to your preferences.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <h4 class="subtitle">Get In Touch</h4>
+        <h1 class="title">Plan Your Next Adventure</h1>
+
+        <div class="contact-wrapper">
+            <!-- Left Box -->
+            <div class="contact-box">
+                <h5>Contact Information</h5>
+                <div class="info-item">
+                    <i class="icon location"></i>
+                    <div>
+                        <h6>Our Office</h6>
+                        <p>
+                            <a href="https://www.google.com/maps/place/YourLocation" target="_blank">
+                                123 Travel Street, Wanderlust City, India
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-item">
+                    <i class="icon phone"></i>
+                    <div>
+                        <h6>Call Us</h6>
+                        <p>
+                            <a href="tel:+919876543210">+91 98765 43210</a> / 
+                            <a href="tel:+919876543211">+91 98765 43211</a>
+                        </p>
+                    </div>
+                </div>
+                <hr>
+                <div class="info-item">
+                    <i class="icon email"></i>
+                    <div>
+                        <h6>Email Us</h6>
+                        <p>
+                            <a href="mailto:info@dreamtravels.com">info&#64;dreamtravels.com</a><br>
+                            <a href="mailto:support@dreamtravels.com">support&#64;dreamtravels.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Box (Form) -->
+            <div class="contact-box">
+                <h5>Start Your Journey With Us</h5>
+                <form (ngSubmit)="saveData()" #contactForm="ngForm">
+                    <input type="text" name="name" [(ngModel)]="formData.name" placeholder="Your Name" required>
+                    <input type="email" name="email" [(ngModel)]="formData.email" placeholder="Your Email" required>
+                    <input type="text" name="destination" [(ngModel)]="formData.destination" placeholder="Preferred Destination" required>
+                    <textarea name="message" [(ngModel)]="formData.message" placeholder="Tell us about your dream trip" rows="5" required></textarea>
+                    <button type="submit">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Address</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Plot No 78/D/3, Survey No. 79, Phase-VI, Industrial Park, Jeedimetla, Hyderabad - 500055 Telangana, India</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>Tel: +91 80196 77735 / +91 80196 77765
+                </p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>info&#64;example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Services</h5>
+                <a class="btn btn-link" href="Flight">Flight  Services ✈️</a>
+                <a class="btn btn-link" href="Hotel">Hotel  Services 🏨</a>
+                <a class="btn btn-link" href="Holiday">Holiday  Tours 🌍</a>
+                <a class="btn btn-link" href="rental">Rental Services 🚗</a>                
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Quick Links</h5>
+                <a class="btn btn-link" href="/#">Home  Page..............</a>
+                <a class="btn btn-link" href="about">About  Page..............</a>
+                <a class="btn btn-link" href="contact">Cantact  Page..............</a>                               
+            </div>
+
+
+            
+            <div class="col-lg-3 col-md-6">
+                <h5 class="text-light mb-4">Newsletter</h5>
+                
+                <div class="position-relative mx-auto" style="max-width: 400px;">
+                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  </div>
